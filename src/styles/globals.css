@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sand:      #F5F0E8;
+  --color-parchment: #EDE8DC;
+  --color-mist:      #D4CEC6;
+  --color-stone:     #C4B89A;
+  --color-clay:      #8B7355;
+  --color-ink:       #2C2416;
+  --color-sage:      #9CAF88;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #F5F0E8;
+    color: #2C2416;
+    font-family: 'Inter var', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  :focus-visible {
+    outline: 2px solid #8B7355;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,2 @@
+Add your profile photo as assets/profile.jpg (recommended: 400x400px JPEG or PNG).
+Add your resume as assets/resume.pdf to enable the download link.

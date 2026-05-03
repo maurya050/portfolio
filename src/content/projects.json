@@ -1,0 +1,49 @@
+[
+  {
+    "id": "kansei-ui",
+    "title": "Kansei UI — Design System",
+    "summary": "A lightweight design system focused on calm, minimal interfaces for enterprise apps. Built with accessibility and token-based theming as first-class constraints.",
+    "techStack": ["CSS", "Vanilla JS", "Accessibility", "Design Tokens"],
+    "repo": "https://github.com/maurya050/kansei-ui",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "factory-insights",
+    "title": "Factory Insights — Analytics Dashboard",
+    "summary": "Real-time telemetry visualisations for production lines with alerting and CSV/JSON export. Processes 50K+ sensor events per minute.",
+    "techStack": ["React", "Node.js", "D3.js", "WebSocket"],
+    "repo": "https://github.com/maurya050/factory-insights",
+    "demo": "https://factory-insights.demo.example.com",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "testbench",
+    "title": "TestBench — Automation Suite",
+    "summary": "End-to-end test automation framework for firmware validation and QA workflows. Reduced manual testing effort by 70% across 3 product lines.",
+    "techStack": ["Python", "pytest", "CI/CD", "Shell"],
+    "repo": "https://github.com/maurya050/testbench",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "agentic-pipeline",
+    "title": "Agentic AI Pipeline",
+    "summary": "Multi-agent orchestration system for automated code review and documentation generation using LLMs. Integrates with GitHub Actions for continuous AI-assisted quality gates.",
+    "techStack": ["TypeScript", "LangChain", "OpenAI API", "GitHub Actions"],
+    "repo": "https://github.com/maurya050/agentic-pipeline",
+    "featured": true,
+    "order": 4
+  },
+  {
+    "id": "portfolio-minimal",
+    "title": "Portfolio — This Site",
+    "summary": "A static, mobile-first portfolio built with React, Vite, and Tailwind CSS, reflecting Japanese minimalist design principles. Pre-rendered for SEO, deployed on GitHub Pages.",
+    "techStack": ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion"],
+    "repo": "https://github.com/maurya050/portfolio",
+    "demo": "https://maurya050.github.io/portfolio/",
+    "featured": true,
+    "order": 5
+  }
+]
