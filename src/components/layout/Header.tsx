@@ -28,7 +28,7 @@ export function Header({ activeSection, showBlogNav }: HeaderProps) {
         className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
       >
         {/* Logo */}
-        <a href="#about" className="text-ink font-semibold text-2xl">
+        <a href="#about" className="text-ink font-extrabold text-2xl">
           Shivam Maurya
         </a>
 
@@ -41,7 +41,7 @@ export function Header({ activeSection, showBlogNav }: HeaderProps) {
                 className={
                   activeSection === section
                     ? 'text-clay font-medium'
-                    : 'text-stone hover:text-ink transition-colors'
+                    : 'text-[#5A4A38] hover:text-ink transition-colors'
                 }
               >
                 {LABELS[section]}
@@ -98,7 +98,7 @@ export function Header({ activeSection, showBlogNav }: HeaderProps) {
                   className={
                     activeSection === section
                       ? 'text-clay font-medium block'
-                      : 'text-stone hover:text-ink transition-colors block'
+                      : 'text-[#5A4A38] hover:text-ink transition-colors block'
                   }
                   onClick={() => setMenuOpen(false)}
                 >
