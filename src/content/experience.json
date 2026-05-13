@@ -11,6 +11,7 @@
       "Improved production yield by **4.5%** through real-time defect detection pipeline integrating computer vision",
       "Architected a telemetry ingestion service handling **50K+ sensor events/minute** with sub-100ms alerting"
     ],
+    "techTags": ["Python", "OpenCV", "WebSocket", "PostgreSQL", "Linux"],
     "order": 1
   },
   {
@@ -25,6 +26,7 @@
       "Saved an estimated **2,000 engineering hours annually** by automating regression suites across 3 QA teams",
       "Built a CI pipeline integrating hardware-in-the-loop testing, reducing release cycle from 4 weeks to **10 days**"
     ],
+    "techTags": ["Python", "pytest", "CI/CD", "Shell", "Firmware"],
     "order": 2
   }
 ]

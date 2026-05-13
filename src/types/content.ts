@@ -37,6 +37,7 @@ export interface ExperienceEntry {
   achievements: string[]
   order: number
   companyUrl?: string
+  techTags?: string[]
 }
 
 export interface BlogPostFrontmatter {
