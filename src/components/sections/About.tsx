@@ -13,11 +13,14 @@ const initials = profile.name
 
 const nameParts = profile.name.split(' ')
 
+const PRIMARY_SKILLS = ['TypeScript', 'Python', 'React', 'Node.js', 'LangChain', 'PostgreSQL', 'Docker']
+const SECONDARY_SKILLS = ['CI/CD', 'Computer Vision', 'WebSocket']
+
 export function About() {
   const [photoError, setPhotoError] = useState(false)
 
   return (
-    <section id="about" className="min-h-screen flex items-center bg-sand">
+    <section id="about" className="bg-sand">
       <div className="max-w-5xl mx-auto px-6 py-24 w-full">
         <div className="flex flex-col md:flex-row md:items-start gap-12 md:gap-20">
 
@@ -43,8 +46,8 @@ export function About() {
             )}
           </div>
 
-          {/* Right — dominant content */}
-          <div className="ml-auto">
+          {/* Right — content */}
+          <div className="flex-1">
             <p className="text-stone text-base tracking-[0.2em] uppercase mb-8 font-medium">
               Full Stack Engineer · Agentic AI
             </p>
@@ -55,16 +58,22 @@ export function About() {
               ))}
             </h1>
 
-            <p className="text-stone text-base leading-relaxed max-w-xs mb-10">
+            <p className="text-[#3A2E22] text-base leading-relaxed mb-6">
               {profile.tagline}
             </p>
 
-            <nav aria-label="Social links" className="flex gap-7 text-base">
+            {profile.bio && (
+              <p className="text-[#5A4A38] text-base leading-loose mb-8 border-l-2 border-clay pl-4 max-w-lg">
+                {profile.bio}
+              </p>
+            )}
+
+            <nav aria-label="Social links" className="flex gap-7 text-base mb-4">
               <a
                 href={profile.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
+                className="text-[#8B5A2B] hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
               >
                 GitHub
               </a>
@@ -72,23 +81,48 @@ export function About() {
                 href={profile.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
+                className="text-[#8B5A2B] hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
               >
                 LinkedIn
               </a>
               <a
                 href={`mailto:${profile.social.email}`}
-                className="text-stone hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
+                className="text-[#8B5A2B] hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
               >
                 Email
               </a>
             </nav>
 
             {profile.availability && (
-              <p className="mt-8 text-base text-sage font-medium tracking-wide">
+              <p className="text-base text-sage font-medium tracking-wide mb-10">
                 {profile.availability}
               </p>
             )}
+
+            {/* Skills strip */}
+            <div className="border-t border-mist pt-8">
+              <p className="text-stone text-xs tracking-[0.18em] uppercase font-semibold mb-4">
+                Core Skills
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {PRIMARY_SKILLS.map(skill => (
+                  <span
+                    key={skill}
+                    className="bg-[#3D3328] text-[#C8864A] text-sm font-medium px-3 py-1 rounded"
+                  >
+                    {skill}
+                  </span>
+                ))}
+                {SECONDARY_SKILLS.map(skill => (
+                  <span
+                    key={skill}
+                    className="bg-parchment text-[#6B5035] text-sm font-medium px-3 py-1 rounded"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
 
         </div>
