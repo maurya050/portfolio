@@ -1,7 +1,6 @@
 import profileData from '@/content/profile.json'
 import type { Profile } from '@/types/content'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
-import { Button } from '@/components/ui/Button'
 
 const profile = profileData as Profile
 

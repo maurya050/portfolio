@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-sand:      #F5F0E8;
+  --color-sand:      #F7F3ED;
   --color-parchment: #EDE8DC;
-  --color-mist:      #D4CEC6;
-  --color-stone:     #C4B89A;
-  --color-clay:      #8B7355;
-  --color-ink:       #2C2416;
-  --color-sage:      #9CAF88;
+  --color-mist:      #D8D0C0;
+  --color-stone:     #8B6B4A;
+  --color-clay:      #C8864A;
+  --color-ink:       #1A1208;
+  --color-sage:      #7A9A68;
 }
 
 @layer base {
@@ -17,12 +17,12 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #F5F0E8;
-    color: #2C2416;
+    background-color: #F7F3ED;
+    color: #1A1208;
     font-family: 'Inter var', 'Inter', system-ui, -apple-system, sans-serif;
   }
   :focus-visible {
-    outline: 2px solid #8B7355;
+    outline: 2px solid #C8864A;
     outline-offset: 2px;
     border-radius: 2px;
   }
