@@ -10,6 +10,7 @@ export function Experience() {
     <section id="experience" className="py-24 bg-sand">
       <div className="max-w-5xl mx-auto px-6">
         <AnimatedSection>
+          <p className="text-stone text-xs tracking-[0.18em] uppercase font-semibold mb-3">Career</p>
           <h2 className="text-3xl font-bold text-ink mb-12">Experience</h2>
         </AnimatedSection>
         <div className="space-y-12">
