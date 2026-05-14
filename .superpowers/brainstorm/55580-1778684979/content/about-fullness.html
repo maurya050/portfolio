@@ -1,0 +1,166 @@
+<h2>About / Hero Section</h2>
+<p class="subtitle">The hero is currently half-empty. Three options for filling it with real content.</p>
+
+<div class="cards">
+
+  <!-- Option A: Bio + Skills Strip -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0; overflow:hidden;">
+      <div style="background:#F7F3ED; padding:20px 22px; font-family:'Inter',system-ui,sans-serif; min-height:280px;">
+
+        <div style="display:flex; gap:20px; align-items:flex-start;">
+          <!-- Avatar -->
+          <div style="width:56px; height:56px; border-radius:50%; background:#3D3328; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:18px;">
+            <span style="color:#C8864A; font-size:14px; font-weight:700;">SM</span>
+          </div>
+          <!-- Main text -->
+          <div style="flex:1;">
+            <p style="color:#8B6B4A; font-size:9px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:8px;">Full Stack Engineer · Agentic AI</p>
+            <h1 style="color:#1A1208; font-size:28px; font-weight:800; line-height:1.1; margin-bottom:10px;">Shivam<br>Maurya</h1>
+            <p style="color:#4A3E32; font-size:10px; line-height:1.65; margin-bottom:10px; max-width:220px;">I build production-grade AI systems and the clean interfaces that make them work.</p>
+            <!-- Bio paragraph rendered -->
+            <p style="color:#6B5848; font-size:9px; line-height:1.7; margin-bottom:12px; max-width:260px; border-left:2px solid #C8864A; padding-left:8px;">Full Stack Engineer with 3+ years experience at Foxconn and Wistron, specializing in backend systems, automation, and agentic AI pipelines.</p>
+            <div style="display:flex; gap:10px; margin-bottom:14px;">
+              <span style="color:#7A5230; font-size:10px; border-bottom:1px solid #7A5230;">GitHub</span>
+              <span style="color:#7A5230; font-size:10px; border-bottom:1px solid #7A5230;">LinkedIn</span>
+              <span style="color:#7A5230; font-size:10px; border-bottom:1px solid #7A5230;">Email</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills strip at bottom -->
+        <div style="border-top:1px solid #D8D0C0; margin-top:14px; padding-top:12px;">
+          <p style="color:#8B6B4A; font-size:8px; text-transform:uppercase; letter-spacing:0.12em; margin-bottom:8px;">Core Skills</p>
+          <div style="display:flex; gap:5px; flex-wrap:wrap;">
+            <span style="background:#3D3328; color:#C8864A; font-size:8px; padding:3px 8px; border-radius:2px;">TypeScript</span>
+            <span style="background:#3D3328; color:#C8864A; font-size:8px; padding:3px 8px; border-radius:2px;">Python</span>
+            <span style="background:#3D3328; color:#C8864A; font-size:8px; padding:3px 8px; border-radius:2px;">React</span>
+            <span style="background:#3D3328; color:#C8864A; font-size:8px; padding:3px 8px; border-radius:2px;">Node.js</span>
+            <span style="background:#3D3328; color:#C8864A; font-size:8px; padding:3px 8px; border-radius:2px;">LangChain</span>
+            <span style="background:#3D3328; color:#C8864A; font-size:8px; padding:3px 8px; border-radius:2px;">PostgreSQL</span>
+            <span style="background:#3D3328; color:#C8864A; font-size:8px; padding:3px 8px; border-radius:2px;">Docker</span>
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:3px 8px; border-radius:2px;">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Bio + Skills Strip</h3>
+      <p>Renders the hidden bio paragraph, adds a dark skills chip row at the bottom of the hero. Stays single-column, fills the space naturally.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Stats bar + bio -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0; overflow:hidden;">
+      <div style="background:#F7F3ED; padding:20px 22px; font-family:'Inter',system-ui,sans-serif; min-height:280px;">
+
+        <div style="display:flex; gap:20px; align-items:flex-start; margin-bottom:14px;">
+          <div style="width:56px; height:56px; border-radius:50%; background:#3D3328; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:18px;">
+            <span style="color:#C8864A; font-size:14px; font-weight:700;">SM</span>
+          </div>
+          <div style="flex:1;">
+            <p style="color:#8B6B4A; font-size:9px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:8px;">Full Stack Engineer · Agentic AI</p>
+            <h1 style="color:#1A1208; font-size:28px; font-weight:800; line-height:1.1; margin-bottom:10px;">Shivam<br>Maurya</h1>
+            <p style="color:#4A3E32; font-size:10px; line-height:1.65; margin-bottom:10px; max-width:220px;">I build production-grade AI systems and the clean interfaces that make them work.</p>
+            <p style="color:#6B5848; font-size:9px; line-height:1.7; margin-bottom:12px; max-width:260px;">Full Stack Engineer with 3+ years experience at Foxconn and Wistron, specializing in backend systems, automation, and agentic AI pipelines.</p>
+            <div style="display:flex; gap:10px;">
+              <span style="color:#7A5230; font-size:10px; border-bottom:1px solid #7A5230;">GitHub</span>
+              <span style="color:#7A5230; font-size:10px; border-bottom:1px solid #7A5230;">LinkedIn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div style="background:#3D3328; border-radius:4px; padding:12px 16px; display:flex; justify-content:space-around; gap:8px;">
+          <div style="text-align:center;">
+            <p style="color:#C8864A; font-size:16px; font-weight:800; margin-bottom:2px;">3+</p>
+            <p style="color:#A89070; font-size:8px; text-transform:uppercase; letter-spacing:0.1em;">Years Exp.</p>
+          </div>
+          <div style="text-align:center; border-left:1px solid #4D4338; padding-left:12px;">
+            <p style="color:#C8864A; font-size:16px; font-weight:800; margin-bottom:2px;">50K+</p>
+            <p style="color:#A89070; font-size:8px; text-transform:uppercase; letter-spacing:0.1em;">Events/min</p>
+          </div>
+          <div style="text-align:center; border-left:1px solid #4D4338; padding-left:12px;">
+            <p style="color:#C8864A; font-size:16px; font-weight:800; margin-bottom:2px;">5</p>
+            <p style="color:#A89070; font-size:8px; text-transform:uppercase; letter-spacing:0.1em;">Projects</p>
+          </div>
+          <div style="text-align:center; border-left:1px solid #4D4338; padding-left:12px;">
+            <p style="color:#C8864A; font-size:16px; font-weight:800; margin-bottom:2px;">22%</p>
+            <p style="color:#A89070; font-size:8px; text-transform:uppercase; letter-spacing:0.1em;">Failure ↓</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Bio + Stats Bar</h3>
+      <p>Bio paragraph + a dark metric strip showing key numbers from your resume (3+ years, 50K events/min, 22% failure reduction). Anchors credibility fast.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Two-column split (bio left, skills grid right) -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0; overflow:hidden;">
+      <div style="background:#F7F3ED; padding:20px 22px; font-family:'Inter',system-ui,sans-serif; min-height:280px;">
+
+        <!-- Top row -->
+        <div style="display:flex; gap:16px; align-items:flex-start; margin-bottom:16px;">
+          <div style="width:52px; height:52px; border-radius:50%; background:#3D3328; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:14px;">
+            <span style="color:#C8864A; font-size:13px; font-weight:700;">SM</span>
+          </div>
+          <div>
+            <p style="color:#8B6B4A; font-size:9px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:6px;">Full Stack Engineer · Agentic AI</p>
+            <h1 style="color:#1A1208; font-size:26px; font-weight:800; line-height:1.1; margin-bottom:8px;">Shivam Maurya</h1>
+            <p style="color:#4A3E32; font-size:10px; line-height:1.6; max-width:200px;">I build production-grade AI systems and the clean interfaces that make them work.</p>
+          </div>
+        </div>
+
+        <!-- Two columns -->
+        <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:12px; border-top:1px solid #D8D0C0; padding-top:12px;">
+          <div>
+            <p style="color:#8B6B4A; font-size:8px; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:6px;">About</p>
+            <p style="color:#4A3E32; font-size:9px; line-height:1.7; margin-bottom:8px;">Full Stack Engineer with 3+ years at Foxconn and Wistron, specializing in backend systems, automation, and agentic AI pipelines. I care deeply about performance and simplicity.</p>
+            <div style="display:flex; gap:8px;">
+              <span style="color:#7A5230; font-size:9px; border-bottom:1px solid #7A5230;">GitHub</span>
+              <span style="color:#7A5230; font-size:9px; border-bottom:1px solid #7A5230;">LinkedIn</span>
+              <span style="color:#7A5230; font-size:9px; border-bottom:1px solid #7A5230;">Email</span>
+            </div>
+          </div>
+          <div>
+            <p style="color:#8B6B4A; font-size:8px; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:6px;">Skills</p>
+            <div style="display:flex; flex-direction:column; gap:4px;">
+              <div>
+                <p style="color:#6B5035; font-size:7px; text-transform:uppercase; margin-bottom:2px;">Languages</p>
+                <div style="display:flex; gap:3px; flex-wrap:wrap;">
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">TS</span>
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">Python</span>
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">Go</span>
+                </div>
+              </div>
+              <div>
+                <p style="color:#6B5035; font-size:7px; text-transform:uppercase; margin-bottom:2px;">Frontend</p>
+                <div style="display:flex; gap:3px; flex-wrap:wrap;">
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">React</span>
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">Tailwind</span>
+                </div>
+              </div>
+              <div>
+                <p style="color:#6B5035; font-size:7px; text-transform:uppercase; margin-bottom:2px;">AI / Backend</p>
+                <div style="display:flex; gap:3px; flex-wrap:wrap;">
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">LangChain</span>
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">Node.js</span>
+                  <span style="background:#3D3328; color:#C8864A; font-size:7px; padding:2px 5px; border-radius:2px;">Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Two-Column Split</h3>
+      <p>Bio on the left, categorised skills grid on the right. Fills horizontal space maximally. More structured, almost résumé-like in density.</p>
+    </div>
+  </div>
+
+</div>
