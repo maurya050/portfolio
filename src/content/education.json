@@ -1,0 +1,24 @@
+[
+  {
+    "id": "iit-madras",
+    "institution": "Indian Institute of Technology, Madras",
+    "degree": "Master of Technology (M.Tech)",
+    "field": "Computer Science and Engineering",
+    "startYear": "2022",
+    "endYear": "2024",
+    "gpa": "8.81 / 10",
+    "url": "https://www.iitm.ac.in",
+    "order": 1
+  },
+  {
+    "id": "sharda-university",
+    "institution": "Sharda University",
+    "degree": "Bachelor of Technology (B.Tech)",
+    "field": "Computer Science",
+    "startYear": "2016",
+    "endYear": "2020",
+    "gpa": "8.27 / 10",
+    "url": "https://sharda.ac.in",
+    "order": 2
+  }
+]

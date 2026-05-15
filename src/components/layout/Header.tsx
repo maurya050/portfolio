@@ -5,11 +5,12 @@ interface HeaderProps {
   showBlogNav: boolean
 }
 
-const NAV_SECTIONS = ['about', 'projects', 'experience', 'contact'] as const
+const NAV_SECTIONS = ['about', 'projects', 'experience', 'education', 'contact'] as const
 const LABELS: Record<string, string> = {
   about: 'Home',
   projects: 'Projects',
   experience: 'Experience',
+  education: 'Education',
   contact: 'Contact',
   blog: 'Writing',
 }
@@ -18,7 +19,7 @@ export function Header({ activeSection, showBlogNav }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const sections = showBlogNav
-    ? [...NAV_SECTIONS.slice(0, 3), 'blog', NAV_SECTIONS[3]]
+    ? [...NAV_SECTIONS.slice(0, 4), 'blog', NAV_SECTIONS[4]]
     : [...NAV_SECTIONS]
 
   return (

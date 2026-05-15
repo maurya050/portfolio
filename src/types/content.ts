@@ -40,6 +40,18 @@ export interface ExperienceEntry {
   techTags?: string[]
 }
 
+export interface EducationEntry {
+  id: string
+  institution: string
+  degree: string
+  field: string
+  startYear: string
+  endYear: string
+  gpa?: string
+  url?: string
+  order: number
+}
+
 export interface BlogPostFrontmatter {
   title: string
   date: string

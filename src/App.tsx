@@ -5,6 +5,7 @@ import { About } from '@/components/sections/About'
 import { Projects } from '@/components/sections/Projects'
 import { Experience } from '@/components/sections/Experience'
 import { Blog } from '@/components/sections/Blog'
+import { Education } from '@/components/sections/Education'
 import { Contact } from '@/components/sections/Contact'
 import { useBlogPosts } from '@/hooks/useBlogPosts'
 import profileData from '@/content/profile.json'
@@ -18,7 +19,7 @@ function App() {
   const showBlogNav = posts.length > 0
 
   useEffect(() => {
-    const sections = ['about', 'projects', 'experience', 'blog', 'contact']
+    const sections = ['about', 'projects', 'experience', 'education', 'blog', 'contact']
     const observers: IntersectionObserver[] = []
 
     sections.forEach(id => {
@@ -47,6 +48,7 @@ function App() {
         <About />
         <Projects />
         <Experience />
+        <Education />
         {showBlogNav && <Blog />}
         <Contact />
       </Layout>
