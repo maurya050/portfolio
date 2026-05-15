@@ -35,7 +35,7 @@ export function About() {
               </div>
             ) : (
               <img
-                src={`/portfolio/${profile.photo}`}
+                src={`/${profile.photo}`}
                 alt={`${profile.name} — portrait`}
                 width={208}
                 height={208}
