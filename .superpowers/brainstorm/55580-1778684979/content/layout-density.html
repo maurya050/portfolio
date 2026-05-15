@@ -1,0 +1,143 @@
+<h2>Layout Density</h2>
+<p class="subtitle">How filled should each section feel? Compare three approaches using the Projects section as an example.</p>
+
+<div class="cards">
+
+  <!-- Option A: List with more detail -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0; overflow:hidden;">
+      <div style="background:#F7F3ED; padding:20px 22px; font-family:'Inter',system-ui,sans-serif;">
+        <p style="color:#1A1208; font-size:13px; font-weight:700; margin-bottom:14px; letter-spacing:-0.01em;">Projects.</p>
+
+        <div style="border-left:3px solid #C8864A; padding-left:12px; margin-bottom:12px;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
+            <span style="color:#1A1208; font-size:12px; font-weight:600;">Agentic AI Pipeline</span>
+            <span style="color:#C8864A; font-size:9px; padding:2px 7px; border:1px solid #C8864A; border-radius:2px;">View →</span>
+          </div>
+          <p style="color:#4A3E32; font-size:10px; line-height:1.6; margin-bottom:6px;">Multi-agent orchestration system for automated code review and documentation generation using LLMs.</p>
+          <p style="color:#7A6048; font-size:9px; margin-bottom:6px; font-style:italic;">Integrates with GitHub Actions for continuous AI-assisted quality gates.</p>
+          <div style="display:flex; gap:4px; flex-wrap:wrap;">
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:2px 6px; border-radius:2px;">TypeScript</span>
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:2px 6px; border-radius:2px;">LangChain</span>
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:2px 6px; border-radius:2px;">OpenAI API</span>
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:2px 6px; border-radius:2px;">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div style="border-left:3px solid #C8864A; padding-left:12px; opacity:0.65;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
+            <span style="color:#1A1208; font-size:12px; font-weight:600;">Factory Insights</span>
+            <span style="color:#C8864A; font-size:9px; padding:2px 7px; border:1px solid #C8864A; border-radius:2px;">Demo →</span>
+          </div>
+          <p style="color:#4A3E32; font-size:10px; line-height:1.6; margin-bottom:6px;">Real-time telemetry visualisations for production lines with alerting and CSV/JSON export.</p>
+          <div style="display:flex; gap:4px; flex-wrap:wrap;">
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:2px 6px; border-radius:2px;">React</span>
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:2px 6px; border-radius:2px;">D3.js</span>
+            <span style="background:#EDE8DC; color:#6B5035; font-size:8px; padding:2px 6px; border-radius:2px;">WebSocket</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Enhanced List</h3>
+      <p>Same vertical list, but richer — longer descriptions, secondary detail line, better-spaced badges. Keeps the minimal feel with more substance.</p>
+    </div>
+  </div>
+
+  <!-- Option B: 2-column grid cards -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0; overflow:hidden;">
+      <div style="background:#F7F3ED; padding:20px 22px; font-family:'Inter',system-ui,sans-serif;">
+        <p style="color:#1A1208; font-size:13px; font-weight:700; margin-bottom:14px;">Projects.</p>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <div style="background:#EDE8DC; border-radius:4px; padding:12px; border-top:3px solid #C8864A;">
+            <p style="color:#1A1208; font-size:11px; font-weight:600; margin-bottom:4px;">Agentic AI Pipeline</p>
+            <p style="color:#4A3E32; font-size:9px; line-height:1.5; margin-bottom:8px;">Multi-agent orchestration for automated code review using LLMs.</p>
+            <div style="display:flex; gap:3px; flex-wrap:wrap; margin-bottom:8px;">
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">TypeScript</span>
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">LangChain</span>
+            </div>
+            <span style="color:#C8864A; font-size:9px; font-weight:500;">GitHub →</span>
+          </div>
+          <div style="background:#EDE8DC; border-radius:4px; padding:12px; border-top:3px solid #C8864A;">
+            <p style="color:#1A1208; font-size:11px; font-weight:600; margin-bottom:4px;">Factory Insights</p>
+            <p style="color:#4A3E32; font-size:9px; line-height:1.5; margin-bottom:8px;">Real-time telemetry for production lines. 50K+ events/min.</p>
+            <div style="display:flex; gap:3px; flex-wrap:wrap; margin-bottom:8px;">
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">React</span>
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">D3.js</span>
+            </div>
+            <span style="color:#C8864A; font-size:9px; font-weight:500;">Demo →</span>
+          </div>
+          <div style="background:#EDE8DC; border-radius:4px; padding:12px; border-top:3px solid #C8864A; opacity:0.7;">
+            <p style="color:#1A1208; font-size:11px; font-weight:600; margin-bottom:4px;">TestBench</p>
+            <p style="color:#4A3E32; font-size:9px; line-height:1.5; margin-bottom:8px;">Firmware validation framework. Reduced testing effort 70%.</p>
+            <div style="display:flex; gap:3px; flex-wrap:wrap; margin-bottom:8px;">
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">Python</span>
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">pytest</span>
+            </div>
+            <span style="color:#C8864A; font-size:9px; font-weight:500;">GitHub →</span>
+          </div>
+          <div style="background:#EDE8DC; border-radius:4px; padding:12px; border-top:3px solid #C8864A; opacity:0.7;">
+            <p style="color:#1A1208; font-size:11px; font-weight:600; margin-bottom:4px;">Kansei UI</p>
+            <p style="color:#4A3E32; font-size:9px; line-height:1.5; margin-bottom:8px;">Minimal design system with token-based theming.</p>
+            <div style="display:flex; gap:3px; flex-wrap:wrap; margin-bottom:8px;">
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">CSS</span>
+              <span style="background:#D8D0C0; color:#5A3E28; font-size:7px; padding:1px 5px; border-radius:2px;">Vanilla JS</span>
+            </div>
+            <span style="color:#C8864A; font-size:9px; font-weight:500;">GitHub →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Card Grid</h3>
+      <p>2-column card grid. More visual density, scannable at a glance, fills horizontal space well. More "web app" feel.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Featured + list mix -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0; overflow:hidden;">
+      <div style="background:#F7F3ED; padding:20px 22px; font-family:'Inter',system-ui,sans-serif;">
+        <p style="color:#1A1208; font-size:13px; font-weight:700; margin-bottom:14px;">Projects.</p>
+
+        <!-- Featured project large -->
+        <div style="background:#3D3328; border-radius:4px; padding:14px; margin-bottom:10px; border-left:4px solid #C8864A;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px;">
+            <div>
+              <span style="color:#C8864A; font-size:8px; text-transform:uppercase; letter-spacing:0.12em;">Featured</span>
+              <p style="color:#F7F3ED; font-size:13px; font-weight:700; margin-top:2px;">Agentic AI Pipeline</p>
+            </div>
+            <span style="color:#C8864A; font-size:9px; border:1px solid #C8864A; padding:2px 7px; border-radius:2px;">GitHub →</span>
+          </div>
+          <p style="color:#A89070; font-size:9px; line-height:1.6; margin-bottom:8px;">Multi-agent orchestration system for automated code review and documentation generation using LLMs. Integrates with GitHub Actions.</p>
+          <div style="display:flex; gap:4px; flex-wrap:wrap;">
+            <span style="background:#4D4338; color:#C8864A; font-size:7px; padding:2px 6px; border-radius:2px;">TypeScript</span>
+            <span style="background:#4D4338; color:#C8864A; font-size:7px; padding:2px 6px; border-radius:2px;">LangChain</span>
+            <span style="background:#4D4338; color:#C8864A; font-size:7px; padding:2px 6px; border-radius:2px;">OpenAI API</span>
+          </div>
+        </div>
+
+        <!-- Smaller list below -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+          <div style="padding:8px 10px; border:1px solid #D8D0C0; border-radius:3px; background:#EDE8DC;">
+            <p style="color:#1A1208; font-size:10px; font-weight:600; margin-bottom:2px;">Factory Insights</p>
+            <p style="color:#6B5A48; font-size:8px; line-height:1.4;">Real-time telemetry dashboard</p>
+            <span style="color:#C8864A; font-size:8px;">Demo →</span>
+          </div>
+          <div style="padding:8px 10px; border:1px solid #D8D0C0; border-radius:3px; background:#EDE8DC;">
+            <p style="color:#1A1208; font-size:10px; font-weight:600; margin-bottom:2px;">TestBench</p>
+            <p style="color:#6B5A48; font-size:8px; line-height:1.4;">Firmware test automation</p>
+            <span style="color:#C8864A; font-size:8px;">GitHub →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Featured + Grid</h3>
+      <p>One large dark featured card (best project), rest in a compact grid below. Creates visual hierarchy, "hero" project stands out.</p>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,30 @@
+[
+  {
+    "title":"Kansei UI — Design System",
+    "summary":"A lightweight design system focused on calm, minimal interfaces for enterprise apps.",
+    "tech":["CSS","Vanilla JS","Accessibility"],
+    "repo":"https://github.com/your/repo-1",
+    "demo":""
+  },
+  {
+    "title":"Factory Insights — Analytics Dashboard",
+    "summary":"Real-time telemetry visualizations for production lines with alerting and exports.",
+    "tech":["React","Node","D3"],
+    "repo":"https://github.com/your/repo-2",
+    "demo":"https://demo.example.com"
+  },
+  {
+    "title":"TestBench — Automation Suite",
+    "summary":"Test automation framework used in firmware validation and QA workflows.",
+    "tech":["Python","PyTest","CI"],
+    "repo":"https://github.com/your/repo-3",
+    "demo":""
+  },
+  {
+    "title":"Portfolio Minimal — This Site",
+    "summary":"A static, mobile-first portfolio showcasing projects and experience.",
+    "tech":["HTML","CSS","JS"],
+    "repo":"https://github.com/your/repo-4",
+    "demo":""
+  }
+]

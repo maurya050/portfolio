@@ -1,30 +1,64 @@
 [
   {
-    "id": "foxconn",
-    "company": "Foxconn Industrial Internet",
-    "role": "Senior Software Engineer",
-    "location": "Taipei, Taiwan",
-    "startDate": "2022-07-01",
+    "id": "air-india-backend",
+    "company": "Air India Limited",
+    "role": "Back End Developer",
+    "location": "Gurugram, Haryana, India",
+    "startDate": "2026-05-01",
     "endDate": null,
     "achievements": [
-      "Led manufacturing automation initiatives that reduced assembly cycle time by **18%** across 4 production lines",
-      "Improved production yield by **4.5%** through real-time defect detection pipeline integrating computer vision",
-      "Architected a telemetry ingestion service handling **50K+ sensor events/minute** with sub-100ms alerting"
+      "Building and maintaining RESTful APIs and microservices for the **MYDIGI** enterprise platform using Spring Boot and Java",
+      "Contributing to internal digital transformation initiatives supporting critical airline business operations at scale",
+      "Designing data-driven backend services within Air India's Enterprise Tech team"
     ],
+    "techTags": ["Java", "Spring Boot", "REST APIs", "Microservices"],
+    "companyUrl": "https://www.airindia.com",
     "order": 1
   },
   {
-    "id": "wistron",
-    "company": "Wistron Corporation",
-    "role": "Systems Engineer",
-    "location": "Taipei, Taiwan",
-    "startDate": "2020-08-01",
-    "endDate": "2022-06-30",
+    "id": "air-india-fullstack",
+    "company": "Air India Limited",
+    "role": "Full Stack Developer",
+    "location": "Kochi, Kerala, India",
+    "startDate": "2024-08-01",
+    "endDate": "2026-04-30",
     "achievements": [
-      "Delivered firmware optimisations and test automation that cut product failure rate by **22%**",
-      "Saved an estimated **2,000 engineering hours annually** by automating regression suites across 3 QA teams",
-      "Built a CI pipeline integrating hardware-in-the-loop testing, reducing release cycle from 4 weeks to **10 days**"
+      "Developed and optimized features for the **IFE web platform** serving passengers across Air India's fleet — content streaming, flight info, and digital services",
+      "Contributed to the **IFC initiative** now powering in-flight Wi-Fi and connectivity on Air India's international routes",
+      "Integrated LLM and LangChain capabilities into consumer-facing digital services as part of the Consumer Tech team"
     ],
+    "techTags": ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "LangChain", "JavaScript"],
+    "companyUrl": "https://www.airindia.com",
     "order": 2
+  },
+  {
+    "id": "iitm-ta-2023",
+    "company": "Indian Institute of Technology, Madras",
+    "role": "Teaching Assistant — Advanced Programming (CS6150)",
+    "location": "Chennai, Tamil Nadu, India",
+    "startDate": "2023-07-01",
+    "endDate": "2023-11-30",
+    "achievements": [
+      "Assisted in delivering **CS6150 Advanced Programming** to M.Tech students, covering advanced data structures, algorithms, and C++ system design",
+      "Conducted weekly tutorials, graded assignments, and held office hours to support student progress"
+    ],
+    "techTags": ["C++", "Data Structures", "Algorithms"],
+    "companyUrl": "https://www.iitm.ac.in",
+    "order": 3
+  },
+  {
+    "id": "iitm-ta-2022",
+    "company": "Indian Institute of Technology, Madras",
+    "role": "Teaching Assistant — Programming & Data Structures (CS2705)",
+    "location": "Chennai, Tamil Nadu, India",
+    "startDate": "2022-07-01",
+    "endDate": "2022-11-30",
+    "achievements": [
+      "Supported **CS2705 Programming and Data Structures** for undergraduate students",
+      "Ran lab sessions and office hours, helping students build strong fundamentals in C++ and data structures"
+    ],
+    "techTags": ["C++", "Data Structures"],
+    "companyUrl": "https://www.iitm.ac.in",
+    "order": 4
   }
 ]
