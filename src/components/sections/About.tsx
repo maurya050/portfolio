@@ -13,8 +13,8 @@ const initials = profile.name
 
 const nameParts = profile.name.split(' ')
 
-const PRIMARY_SKILLS = ['TypeScript', 'Python', 'React', 'Node.js', 'LangChain', 'PostgreSQL', 'Docker']
-const SECONDARY_SKILLS = ['CI/CD', 'Computer Vision', 'WebSocket']
+const PRIMARY_SKILLS = ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'LangChain']
+const SECONDARY_SKILLS = ['MongoDB', 'Next.js', 'Express.js', 'C++', 'Bootstrap']
 
 export function About() {
   const [photoError, setPhotoError] = useState(false)

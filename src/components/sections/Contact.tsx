@@ -58,7 +58,7 @@ export function Contact() {
                 className="flex items-center justify-between py-3 border-b border-[#4D4338] text-[#F7F3ED] hover:text-[#C8864A] transition-colors group"
               >
                 <span className="text-[#8A7060] text-xs uppercase tracking-widest">LinkedIn</span>
-                <span className="text-sm group-hover:underline">shivam-maurya</span>
+                <span className="text-sm group-hover:underline">sm218</span>
               </a>
               {profile.availability && (
                 <div className="flex items-center gap-2 pt-4">
