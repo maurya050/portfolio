@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --color-sand:      #F7F3ED;
-  --color-parchment: #EDE8DC;
-  --color-mist:      #D8D0C0;
-  --color-stone:     #8B6B4A;
-  --color-clay:      #C8864A;
-  --color-ink:       #1A1208;
-  --color-sage:      #7A9A68;
+  --bg-base:        #0A0F1E;
+  --bg-surface:     #0F172A;
+  --bg-elevated:    #111827;
+  --border:         #1E293B;
+  --border-accent:  #1E3A5F;
+  --accent:         #3B82F6;
+  --accent-light:   #60A5FA;
+  --accent-glow:    rgba(59, 130, 246, 0.15);
+  --text-primary:   #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted:     #475569;
 }
 
 @layer base {
@@ -17,12 +21,12 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #F7F3ED;
-    color: #1A1208;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
     font-family: 'Inter var', 'Inter', system-ui, -apple-system, sans-serif;
   }
   :focus-visible {
-    outline: 2px solid #C8864A;
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 2px;
   }
