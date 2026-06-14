@@ -1,14 +1,15 @@
 {
   "name": "Shivam Maurya",
-  "title": "Full Stack & Backend Developer",
-  "tagline": "Building enterprise backend systems and in-flight digital experiences at Air India.",
-  "bio": "Full Stack and Backend Developer at Air India, where I build enterprise-scale microservices for the MYDIGI platform and contributed to the IFE in-flight entertainment web app. I hold an M.Tech in CSE from IIT Madras (GPA 8.81/10), with experience spanning Spring Boot backends, React/Next.js frontends, and LLM integration with LangChain. I care about clean APIs, systems that scale, and keeping complexity in its place.",
+  "title": "Software Engineer",
+  "tagline": "Software Engineer — distributed systems, full-stack, and AI.",
+  "bio": "Software Engineer with 2+ years designing and deploying scalable, high-traffic distributed systems serving millions of users. Proficient in full-stack development, RESTful API design, microservices architecture, AWS cloud deployment, and Agile/Scrum. M.Tech IIT Madras; GATE AIR 424 (top 0.6%).",
   "photo": "assets/images/profile_image.png",
-  "availability": "Currently at Air India — open to conversations",
+  "availability": "Open to conversations",
   "social": {
     "github": "https://github.com/maurya050",
     "linkedin": "https://linkedin.com/in/sm218",
-    "email": "mauryashivam050@gmail.com"
+    "email": "mauryashivam050@gmail.com",
+    "leetcode": "https://leetcode.com/sm218"
   },
   "resume": ""
 }

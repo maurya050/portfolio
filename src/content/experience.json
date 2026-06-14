@@ -2,34 +2,48 @@
   {
     "id": "air-india-backend",
     "company": "Air India Limited",
-    "role": "Back End Developer",
+    "role": "Backend Developer",
     "location": "Gurugram, Haryana, India",
     "startDate": "2026-05-01",
     "endDate": null,
     "achievements": [
-      "Building and maintaining RESTful APIs and microservices for the **MYDIGI** enterprise platform using Spring Boot and Java",
-      "Contributing to internal digital transformation initiatives supporting critical airline business operations at scale",
-      "Designing data-driven backend services within Air India's Enterprise Tech team"
+      "Architect and maintain scalable microservices and RESTful APIs for the **MYDIGI** enterprise chatbot platform, serving Air India's 10,000+ internal users with high availability, fault tolerance, and low latency",
+      "Optimize CI/CD pipelines and backend service workflows, cutting release cycle time by **30%** and improving system throughput, reliability, and observability across enterprise-scale distributed systems"
     ],
-    "techTags": ["Java", "Spring Boot", "REST APIs", "Microservices"],
+    "techTags": ["Java", "Spring Boot", "REST APIs", "Microservices", "CI/CD"],
     "companyUrl": "https://www.airindia.com",
     "order": 1
   },
   {
     "id": "air-india-fullstack",
     "company": "Air India Limited",
-    "role": "Full Stack Developer",
+    "role": "Software Engineer",
     "location": "Kochi, Kerala, India",
     "startDate": "2024-08-01",
-    "endDate": "2026-04-30",
+    "endDate": "2026-03-31",
     "achievements": [
-      "Developed and optimized features for the **IFE web platform** serving passengers across Air India's fleet — content streaming, flight info, and digital services",
-      "Contributed to the **IFC initiative** now powering in-flight Wi-Fi and connectivity on Air India's international routes",
-      "Integrated LLM and LangChain capabilities into consumer-facing digital services as part of the Consumer Tech team"
+      "Built and scaled IFC and IFE consumer platform features using React.js, Next.js, and Node.js, delivering real-time in-flight connectivity and personalized media streaming to **millions of passengers** across Air India's international flight network",
+      "Designed and deployed **10+ RESTful APIs** for real-time passenger engagement and content delivery, reducing API response latency by **25%** and improving cross-system interoperability",
+      "Integrated LLM and LangChain capabilities into consumer-facing digital services; led code reviews following Agile/Scrum practices"
     ],
-    "techTags": ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "LangChain", "JavaScript"],
+    "techTags": ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "LangChain"],
     "companyUrl": "https://www.airindia.com",
     "order": 2
+  },
+  {
+    "id": "shaktimaan-intern",
+    "company": "ShaktiMAAN SoC, IIT Madras Research Park",
+    "role": "Research Intern",
+    "location": "Chennai, Tamil Nadu, India",
+    "startDate": "2023-06-01",
+    "endDate": "2024-05-31",
+    "achievements": [
+      "Ported PyTorch onto ShaktiMAAN (RISC-V) SoC via the Apache TVM compiler stack, achieving a **4x reduction** in memory footprint through quantization and compiler-level optimizations, enabling ML inference on resource-constrained embedded hardware",
+      "Developed custom TVM compilation passes for RISC-V, enabling end-to-end PyTorch model compilation and validated inference accuracy across multiple model architectures on the SoC"
+    ],
+    "techTags": ["Python", "PyTorch", "Apache TVM", "RISC-V", "CUDA"],
+    "companyUrl": "https://www.iitm.ac.in",
+    "order": 3
   },
   {
     "id": "iitm-ta-2023",
@@ -39,12 +53,11 @@
     "startDate": "2023-07-01",
     "endDate": "2023-11-30",
     "achievements": [
-      "Assisted in delivering **CS6150 Advanced Programming** to M.Tech students, covering advanced data structures, algorithms, and C++ system design",
-      "Conducted weekly tutorials, graded assignments, and held office hours to support student progress"
+      "Assisted in delivering **CS6150 Advanced Programming** to M.Tech students; conducted 10+ tutorials, graded exams, and mentored 200+ students in C++ system design, data structures, and algorithms"
     ],
     "techTags": ["C++", "Data Structures", "Algorithms"],
     "companyUrl": "https://www.iitm.ac.in",
-    "order": 3
+    "order": 4
   },
   {
     "id": "iitm-ta-2022",
@@ -54,11 +67,10 @@
     "startDate": "2022-07-01",
     "endDate": "2022-11-30",
     "achievements": [
-      "Supported **CS2705 Programming and Data Structures** for undergraduate students",
-      "Ran lab sessions and office hours, helping students build strong fundamentals in C++ and data structures"
+      "Supported **CS2705 Programming and Data Structures** for undergraduate students; ran lab sessions and office hours helping students build strong fundamentals in C++ and data structures"
     ],
     "techTags": ["C++", "Data Structures"],
     "companyUrl": "https://www.iitm.ac.in",
-    "order": 4
+    "order": 5
   }
 ]

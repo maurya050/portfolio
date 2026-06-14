@@ -10,13 +10,31 @@
     "order": 1
   },
   {
+    "id": "gpu-facility-booking",
+    "title": "GPU-Accelerated Facility Booking System",
+    "summary": "High-throughput concurrent room reservation system with flexible time slots. Leverages CUDA GPU parallel processing to handle thousands of simultaneous booking requests with minimal contention and high availability.",
+    "techStack": ["CUDA", "C++", "Parallel Computing", "GPU"],
+    "repo": "https://github.com/maurya050/gpu-facility-booking",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "gpu-matrix-ops",
+    "title": "High-Performance GPU Matrix Operations",
+    "summary": "Accelerated matrix computations by 50x on 1024×1024 matrices via CUDA shared memory and memory coalescing, reducing computation time by 98% compared to CPU baseline.",
+    "techStack": ["CUDA", "C++", "GPU", "HPC"],
+    "repo": "https://github.com/maurya050/gpu-matrix-ops",
+    "featured": true,
+    "order": 3
+  },
+  {
     "id": "portfolio-minimal",
     "title": "Portfolio — This Site",
-    "summary": "A static, mobile-first portfolio built with React, Vite, and Tailwind CSS, reflecting Japanese minimalist design principles. Pre-rendered for SEO, deployed on GitHub Pages.",
+    "summary": "A static, mobile-first portfolio built with React, Vite, and Tailwind CSS. Pre-rendered for SEO, deployed on Vercel.",
     "techStack": ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion"],
     "repo": "https://github.com/maurya050/portfolio",
     "demo": "https://maurya050.github.io/portfolio/",
     "featured": true,
-    "order": 2
+    "order": 4
   }
 ]
