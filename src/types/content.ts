@@ -2,6 +2,7 @@ export interface ProfileSocial {
   github: string
   linkedin: string
   email: string
+  leetcode?: string
 }
 
 export interface Profile {
