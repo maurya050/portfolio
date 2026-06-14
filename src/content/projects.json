@@ -1,10 +1,10 @@
 [
   {
-    "id": "kansei-ui",
-    "title": "Kansei UI — Design System",
-    "summary": "A lightweight design system focused on calm, minimal interfaces for enterprise apps. Built with accessibility and token-based theming as first-class constraints.",
-    "techStack": ["CSS", "Vanilla JS", "Accessibility", "Design Tokens"],
-    "repo": "https://github.com/maurya050/kansei-ui",
+    "id": "document-helper",
+    "title": "Document Helper — RAG Chatbot",
+    "summary": "RAG-powered chatbot that turns any documentation website into an interactive knowledge base. Input a URL, wait for indexing, then ask questions — answers arrive via real-time streaming with inline source citations.",
+    "techStack": ["FastAPI", "LangChain", "Pinecone", "OpenAI API", "Next.js", "TypeScript", "Tailwind CSS"],
+    "repo": "https://github.com/maurya050/document-helper",
     "featured": true,
     "order": 1
   },
