@@ -4,15 +4,14 @@ import { Footer } from './Footer'
 
 interface LayoutProps {
   children: React.ReactNode
-  activeSection: string
   showBlogNav: boolean
 }
 
-export function Layout({ children, activeSection, showBlogNav }: LayoutProps) {
+export function Layout({ children, showBlogNav }: LayoutProps) {
   return (
     <>
-      <Header activeSection={activeSection} showBlogNav={showBlogNav} />
-      <main className="min-h-screen bg-sand text-ink">{children}</main>
+      <Header showBlogNav={showBlogNav} />
+      <main className="min-h-screen bg-[#0A0F1E] text-[#F1F5F9]">{children}</main>
       <Footer />
     </>
   )

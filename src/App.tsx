@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { HelmetProvider, Helmet } from 'react-helmet-async'
 import { Layout } from '@/components/layout/Layout'
 import { About } from '@/components/sections/About'
 import { Projects } from '@/components/sections/Projects'
 import { Experience } from '@/components/sections/Experience'
-import { Blog } from '@/components/sections/Blog'
 import { Education } from '@/components/sections/Education'
 import { Contact } from '@/components/sections/Contact'
 import { useBlogPosts } from '@/hooks/useBlogPosts'
@@ -13,44 +12,34 @@ import type { Profile } from '@/types/content'
 
 const profile = profileData as Profile
 
+const PAGE_TITLES: Record<string, string> = {
+  '/': `${profile.name} — Portfolio`,
+  '/projects': `Projects — ${profile.name}`,
+  '/experience': `Experience — ${profile.name}`,
+  '/education': `Education — ${profile.name}`,
+  '/contact': `Contact — ${profile.name}`,
+}
+
 function App() {
-  const [activeSection, setActiveSection] = useState('about')
+  const location = useLocation()
   const posts = useBlogPosts()
   const showBlogNav = posts.length > 0
-
-  useEffect(() => {
-    const sections = ['about', 'projects', 'experience', 'education', 'blog', 'contact']
-    const observers: IntersectionObserver[] = []
-
-    sections.forEach(id => {
-      const el = document.getElementById(id)
-      if (!el) return
-      const obs = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActiveSection(id)
-        },
-        { rootMargin: '-40% 0px -55% 0px' },
-      )
-      obs.observe(el)
-      observers.push(obs)
-    })
-
-    return () => observers.forEach(o => o.disconnect())
-  }, [showBlogNav])
+  const title = PAGE_TITLES[location.pathname] ?? `${profile.name} — Portfolio`
 
   return (
     <HelmetProvider>
       <Helmet>
-        <title>{profile.name} — Portfolio</title>
-        <meta name="description" content={`${profile.tagline}`} />
+        <title>{title}</title>
+        <meta name="description" content={profile.tagline} />
       </Helmet>
-      <Layout activeSection={activeSection} showBlogNav={showBlogNav}>
-        <About />
-        <Projects />
-        <Experience />
-        <Education />
-        {showBlogNav && <Blog />}
-        <Contact />
+      <Layout showBlogNav={showBlogNav}>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </Layout>
     </HelmetProvider>
   )
