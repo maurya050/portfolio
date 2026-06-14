@@ -1,131 +1,102 @@
-import { useState } from 'react'
 import profileData from '@/content/profile.json'
 import type { Profile } from '@/types/content'
 
 const profile = profileData as Profile
 
-const initials = profile.name
-  .split(' ')
-  .map((w: string) => w[0])
-  .join('')
-  .toUpperCase()
-  .slice(0, 2)
-
-const nameParts = profile.name.split(' ')
-
-const PRIMARY_SKILLS = ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'LangChain']
-const SECONDARY_SKILLS = ['MongoDB', 'Next.js', 'Express.js', 'C++', 'Bootstrap']
+const STATS = [
+  { value: '2+', label: 'Years Experience' },
+  { value: 'M+', label: 'Users Served' },
+  { value: '500+', label: 'LeetCode Solved' },
+  { value: 'AIR 424', label: 'GATE CS 2022' },
+]
 
 export function About() {
-  const [photoError, setPhotoError] = useState(false)
-
   return (
-    <section id="about" className="bg-sand">
-      <div className="max-w-5xl mx-auto px-6 py-24 w-full">
-        <div className="flex flex-col md:flex-row md:items-start gap-12 md:gap-20">
+    <section id="about" className="min-h-screen flex flex-col items-center justify-center relative bg-[#0A0F1E] px-6 py-24">
+      {/* Blue glow behind name */}
+      <div
+        aria-hidden="true"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse at center, rgba(59,130,246,0.12) 0%, transparent 70%)' }}
+      />
 
-          {/* Left — photo */}
-          <div className="shrink-0 md:pt-16">
-            {photoError || !profile.photo ? (
-              <div
-                aria-label={`${profile.name} — portrait`}
-                className="w-40 h-40 md:w-52 md:h-52 rounded-full bg-mist flex items-center justify-center"
-              >
-                <span className="text-3xl font-bold text-clay select-none">{initials}</span>
-              </div>
-            ) : (
-              <img
-                src={`/${profile.photo}`}
-                alt={`${profile.name} — portrait`}
-                width={208}
-                height={208}
-                fetchPriority="high"
-                className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover ring-4 ring-mist"
-                onError={() => setPhotoError(true)}
-              />
-            )}
-          </div>
+      <div className="relative z-10 text-center max-w-3xl mx-auto">
+        {/* Label */}
+        <p className="text-[#3B82F6] text-xs font-semibold tracking-[0.25em] uppercase mb-6">
+          Software Engineer
+        </p>
 
-          {/* Right — content */}
-          <div className="flex-1">
-            <p className="text-stone text-base tracking-[0.2em] uppercase mb-8 font-medium">
-              Full Stack Engineer · Agentic AI
-            </p>
+        {/* Name */}
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-[#F1F5F9] leading-[1.05] tracking-tight mb-6">
+          {profile.name}
+        </h1>
 
-            <h1 className="text-5xl md:text-6xl lg:text-[5.5rem] font-bold text-ink leading-[1.05] mb-8">
-              {nameParts.map((word, i) => (
-                <span key={i} className="block">{word}</span>
-              ))}
-            </h1>
+        {/* Subline */}
+        <p className="text-[#94A3B8] text-base sm:text-lg mb-10 max-w-md mx-auto">
+          {profile.bio}
+        </p>
 
-            <p className="text-[#3A2E22] text-base leading-relaxed mb-6">
-              {profile.tagline}
-            </p>
-
-            {profile.bio && (
-              <p className="text-[#5A4A38] text-base leading-loose mb-8 border-l-2 border-clay pl-4 max-w-lg">
-                {profile.bio}
-              </p>
-            )}
-
-            <nav aria-label="Social links" className="flex gap-7 text-base mb-4">
-              <a
-                href={profile.social.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#8B5A2B] hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
-              >
-                GitHub
-              </a>
-              <a
-                href={profile.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#8B5A2B] hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
-              >
-                LinkedIn
-              </a>
-              <a
-                href={`mailto:${profile.social.email}`}
-                className="text-[#8B5A2B] hover:text-ink border-b border-transparent hover:border-ink/40 pb-0.5 transition-colors"
-              >
-                Email
-              </a>
-            </nav>
-
-            {profile.availability && (
-              <p className="text-base text-sage font-medium tracking-wide mb-10">
-                {profile.availability}
-              </p>
-            )}
-
-            {/* Skills strip */}
-            <div className="border-t border-mist pt-8">
-              <p className="text-stone text-xs tracking-[0.18em] uppercase font-semibold mb-4">
-                Core Skills
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {PRIMARY_SKILLS.map(skill => (
-                  <span
-                    key={skill}
-                    className="bg-[#3D3328] text-[#C8864A] text-sm font-medium px-3 py-1 rounded"
-                  >
-                    {skill}
-                  </span>
-                ))}
-                {SECONDARY_SKILLS.map(skill => (
-                  <span
-                    key={skill}
-                    className="bg-parchment text-[#6B5035] text-sm font-medium px-3 py-1 rounded"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
+        {/* Stats */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10 max-w-xl mx-auto">
+          {STATS.map(stat => (
+            <div
+              key={stat.label}
+              className="bg-[#0F172A] border border-[#1E3A5F] rounded-lg px-4 py-4"
+            >
+              <div className="text-[#3B82F6] text-xl font-bold">{stat.value}</div>
+              <div className="text-[#475569] text-xs mt-1">{stat.label}</div>
             </div>
-          </div>
-
+          ))}
         </div>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {profile.resume ? (
+            <a
+              href={profile.resume}
+              download
+              className="inline-flex items-center gap-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download CV
+            </a>
+          ) : (
+            <a
+              href={`mailto:${profile.social.email}`}
+              className="inline-flex items-center gap-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+            >
+              Get in Touch
+            </a>
+          )}
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 border border-[#1E3A5F] text-[#94A3B8] hover:text-[#F1F5F9] hover:border-[#3B82F6] font-medium px-6 py-3 rounded-lg transition-colors"
+          >
+            See my work
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+
+        {/* Social links */}
+        <nav aria-label="Social links" className="flex items-center justify-center gap-6 mt-10 text-sm">
+          <a href={profile.social.github} target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#60A5FA] transition-colors">GitHub</a>
+          <a href={profile.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#60A5FA] transition-colors">LinkedIn</a>
+          {profile.social.leetcode && (
+            <a href={profile.social.leetcode} target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#60A5FA] transition-colors">LeetCode</a>
+          )}
+          <a href={`mailto:${profile.social.email}`} className="text-[#475569] hover:text-[#60A5FA] transition-colors">Email</a>
+        </nav>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#1E3A5F] animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
       </div>
     </section>
   )
