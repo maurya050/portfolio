@@ -26,8 +26,12 @@ export function Header({ showBlogNav }: HeaderProps) {
         aria-label="Main navigation"
         className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
       >
-        <NavLink to="/" className="text-[#F1F5F9] font-extrabold text-xl tracking-tight">
-          SM
+        <NavLink to="/" className="flex items-center">
+          <img
+            src="/assets/images/profile_image.png"
+            alt="Shivam Maurya"
+            className="w-9 h-9 rounded-full object-cover ring-2 ring-[#1E3A5F] hover:ring-[#3B82F6] transition-all"
+          />
         </NavLink>
 
         <ul className="hidden sm:flex items-center gap-8">
