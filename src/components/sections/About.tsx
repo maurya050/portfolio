@@ -13,12 +13,22 @@ const STATS = [
 
 export function About() {
   return (
-    <section id="about" className="min-h-screen flex flex-col items-center justify-center relative bg-[#0A0F1E] px-6 py-24">
-      {/* Blue glow behind name */}
+    <section
+      id="about"
+      className="min-h-screen flex flex-col items-center justify-center relative px-6 py-24"
+      style={{
+        backgroundImage: 'url(/assets/images/hero-bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center top',
+      }}
+    >
+      {/* Dark overlay for readability */}
+      <div aria-hidden="true" className="absolute inset-0 bg-[#0A0F1E]/75" />
+      {/* Blue glow */}
       <div
         aria-hidden="true"
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at center, rgba(59,130,246,0.12) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(ellipse at center, rgba(59,130,246,0.15) 0%, transparent 70%)' }}
       />
 
       <div className="relative z-10 text-center max-w-3xl mx-auto">
@@ -42,7 +52,7 @@ export function About() {
           {STATS.map(stat => (
             <div
               key={stat.label}
-              className="bg-[#0F172A] border border-[#1E3A5F] rounded-lg px-4 py-4"
+              className="bg-[#0A0F1E]/60 backdrop-blur-sm border border-[#1E3A5F] rounded-lg px-4 py-4"
             >
               <div className="text-[#3B82F6] text-xl font-bold">{stat.value}</div>
               <div className="text-[#475569] text-xs mt-1">{stat.label}</div>
