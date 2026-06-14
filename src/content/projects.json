@@ -5,6 +5,7 @@
     "summary": "RAG-powered chatbot that turns any documentation website into an interactive knowledge base. Input a URL, wait for indexing, then ask questions — answers arrive via real-time streaming with inline source citations.",
     "techStack": ["FastAPI", "LangChain", "Pinecone", "OpenAI API", "Next.js", "TypeScript", "Tailwind CSS"],
     "repo": "https://github.com/maurya050/document-helper",
+    "demo": "https://document-helper-five.vercel.app/",
     "featured": true,
     "order": 1
   },
