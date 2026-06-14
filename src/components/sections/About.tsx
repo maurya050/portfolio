@@ -23,7 +23,7 @@ export function About() {
       }}
     >
       {/* Dark overlay for readability */}
-      <div aria-hidden="true" className="absolute inset-0 bg-[#0A0F1E]/88" />
+      <div aria-hidden="true" className="absolute inset-0 bg-[#0A0F1E]/80" />
       {/* Blue glow */}
       <div
         aria-hidden="true"
