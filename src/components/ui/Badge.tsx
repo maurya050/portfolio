@@ -1,20 +1,16 @@
 interface BadgeProps {
   label: string
-  variant?: 'default' | 'sage' | 'dark'
+  variant?: 'default' | 'muted'
 }
 
 export function Badge({ label, variant = 'default' }: BadgeProps) {
   const variantClass =
-    variant === 'dark'
-      ? 'bg-[#4D4338] text-[#C8864A]'
-      : variant === 'sage'
-      ? 'bg-sage/20 text-ink'
-      : 'bg-clay/10 text-[#6B5035]'
+    variant === 'muted'
+      ? 'bg-[#1E293B] text-[#475569]'
+      : 'bg-[#1E3A5F] text-[#60A5FA]'
 
   return (
-    <span
-      className={`inline-block rounded px-2.5 py-0.5 text-sm font-medium ${variantClass}`}
-    >
+    <span className={`inline-block rounded px-2.5 py-0.5 text-xs font-medium ${variantClass}`}>
       {label}
     </span>
   )
