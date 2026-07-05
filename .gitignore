@@ -15,5 +15,8 @@ Thumbs.db
 *.swp
 .vscode/settings.json
 
+# Claude Code local settings
+.claude/settings.local.json
+
 # TypeScript
 *.tsbuildinfo
