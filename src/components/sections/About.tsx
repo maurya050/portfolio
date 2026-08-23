@@ -17,13 +17,9 @@ export function About() {
       id="about"
       className="min-h-screen flex flex-col items-center justify-center relative px-6 py-24"
       style={{
-        backgroundImage: 'url(/assets/images/hero-bg.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
+        background: 'linear-gradient(180deg, #0A0F1E 0%, #10182E 55%, #0A0F1E 100%)',
       }}
     >
-      {/* Dark overlay for readability */}
-      <div aria-hidden="true" className="absolute inset-0 bg-[#0A0F1E]/80" />
       {/* Blue glow */}
       <div
         aria-hidden="true"
