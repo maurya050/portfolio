@@ -21,7 +21,7 @@ export function Header({ showBlogNav }: HeaderProps) {
     : NAV_ITEMS
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0F172A]/90 backdrop-blur border-b border-[#1E293B]">
+    <header className="sticky top-0 z-50 bg-sand/90 backdrop-blur border-b border-mist">
       <nav
         aria-label="Main navigation"
         className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
@@ -30,7 +30,7 @@ export function Header({ showBlogNav }: HeaderProps) {
           <img
             src="/assets/images/profile_image.png"
             alt="Shivam Maurya"
-            className="w-9 h-9 rounded-full object-cover ring-2 ring-[#1E3A5F] hover:ring-[#3B82F6] transition-all"
+            className="w-9 h-9 rounded-full object-cover ring-2 ring-mist hover:ring-clay transition-all"
           />
         </NavLink>
 
@@ -42,8 +42,8 @@ export function Header({ showBlogNav }: HeaderProps) {
                 end={item.to === '/'}
                 className={({ isActive }) =>
                   isActive
-                    ? 'text-[#3B82F6] font-medium text-sm'
-                    : 'text-[#94A3B8] hover:text-[#F1F5F9] transition-colors text-sm'
+                    ? 'text-clay font-medium text-sm'
+                    : 'text-stone hover:text-ink transition-colors text-sm'
                 }
               >
                 {item.label}
@@ -54,7 +54,7 @@ export function Header({ showBlogNav }: HeaderProps) {
 
         <button
           type="button"
-          className="sm:hidden text-[#94A3B8] p-1"
+          className="sm:hidden text-stone p-1"
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           aria-label="Toggle navigation menu"
@@ -73,7 +73,7 @@ export function Header({ showBlogNav }: HeaderProps) {
       </nav>
 
       {menuOpen && (
-        <div id="mobile-menu" className="sm:hidden bg-[#0F172A] border-t border-[#1E293B]">
+        <div id="mobile-menu" className="sm:hidden bg-sand border-t border-mist">
           <ul className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4">
             {items.map(item => (
               <li key={item.to}>
@@ -82,8 +82,8 @@ export function Header({ showBlogNav }: HeaderProps) {
                   end={item.to === '/'}
                   className={({ isActive }) =>
                     isActive
-                      ? 'text-[#3B82F6] font-medium block'
-                      : 'text-[#94A3B8] hover:text-[#F1F5F9] transition-colors block'
+                      ? 'text-clay font-medium block'
+                      : 'text-stone hover:text-ink transition-colors block'
                   }
                   onClick={() => setMenuOpen(false)}
                 >

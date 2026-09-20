@@ -5,13 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        sand:      '#F7F3ED',
-        parchment: '#EDE8DC',
-        mist:      '#D8D0C0',
-        stone:     '#8B6B4A',
-        clay:      '#C8864A',
-        ink:       '#1A1208',
-        sage:      '#7A9A68',
+        sand:      '#FBFAF6',
+        parchment: '#F5F1E4',
+        mist:      '#E9E4D6',
+        stone:     '#6B6350',
+        clay:      '#B08D3E',
+        ink:       '#1E1B14',
       },
       fontFamily: {
         sans: ['Inter var', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],

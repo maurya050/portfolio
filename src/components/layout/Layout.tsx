@@ -11,7 +11,7 @@ export function Layout({ children, showBlogNav }: LayoutProps) {
   return (
     <>
       <Header showBlogNav={showBlogNav} />
-      <main className="min-h-screen bg-[#0A0F1E] text-[#F1F5F9]">{children}</main>
+      <main className="min-h-screen bg-sand text-ink">{children}</main>
       <Footer />
     </>
   )
